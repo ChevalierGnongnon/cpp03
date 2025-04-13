@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Scavtrap.hpp                                       :+:      :+:    :+:   */
+/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: chhoflac <chhoflac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 15:27:13 by chhoflac          #+#    #+#             */
-/*   Updated: 2025/04/13 15:38:04 by chhoflac         ###   ########.fr       */
+/*   Updated: 2025/04/13 16:09:15 by chhoflac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ class ScavTrap : public ClapTrap {
 		ScavTrap();
 		~ScavTrap();
 		ScavTrap(std::string name);
-		ScavTrap(ScavTrap &src);
+		ScavTrap(const ScavTrap &src);
 		ScavTrap &operator = (const ScavTrap &otherOne);
 		
 		void	guardGate();

@@ -6,7 +6,7 @@
 /*   By: chhoflac <chhoflac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 15:26:19 by chhoflac          #+#    #+#             */
-/*   Updated: 2025/04/13 16:34:54 by chhoflac         ###   ########.fr       */
+/*   Updated: 2025/04/13 16:52:42 by chhoflac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,3 +44,21 @@ ScavTrap &ScavTrap::operator=(const ScavTrap &otherOne){
 	return  (*this);
 }
 
+void	ScavTrap::attack(const std::string &target){
+	std::cout << "-------- [ScavTrap attack] --------" << std::endl;
+	if(this->hit_points <= 0){
+		std::cout << "ScavTrap " << this->name << " is dead. He can't attack !" << std::endl;
+		return ;
+	}
+	if (this->energy_points > 0){
+		this->energy_points--;
+		std::cout << "ScavTrap " << this->name << " attacks " << target << " causing " << this->attack_damage << " points of damage !" << std::endl;
+		std::cout << "ScavTrap " << this->name << " has now " << this->energy_points << std::endl;
+	}
+	else
+		std::cout << "Error ! ScavTrap " << this->name << " doesn't have anymore energy points and is laying on the ground !" << std::endl;
+}
+
+void	ScavTrap::guardGate(){
+	std::cout << "ScavTrap " << this->name << " is now in Gate keeper mode." << std::endl;
+}

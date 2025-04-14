@@ -6,11 +6,11 @@
 #    By: chhoflac <chhoflac@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/10 11:19:09 by chhoflac          #+#    #+#              #
-#    Updated: 2025/04/12 14:54:32 by chhoflac         ###   ########.fr        #
+#    Updated: 2025/04/14 20:03:37 by chhoflac         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = fixed
+NAME = ClapTrap
 
 SOURCES = main.cpp \
 	ClapTrap.cpp

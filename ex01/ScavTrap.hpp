@@ -6,7 +6,7 @@
 /*   By: chhoflac <chhoflac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 15:27:13 by chhoflac          #+#    #+#             */
-/*   Updated: 2025/04/14 19:10:07 by chhoflac         ###   ########.fr       */
+/*   Updated: 2025/04/14 20:46:58 by chhoflac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,6 @@ class ScavTrap : public ClapTrap {
 		ScavTrap(std::string name);
 		ScavTrap(const ScavTrap &src);
 		ScavTrap &operator = (const ScavTrap &otherOne);
-		
-		std::string getName() const;
-		int			getHitPoints() const;
-		int			getEnergyPoints() const;
-		int			getAttackDamage() const;
-
 		
 		void	guardGate();
 		void	attack(const std::string &target);

@@ -6,7 +6,7 @@
 /*   By: chhoflac <chhoflac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/14 12:52:28 by chhoflac          #+#    #+#             */
-/*   Updated: 2025/04/14 17:50:41 by chhoflac         ###   ########.fr       */
+/*   Updated: 2025/04/14 20:48:45 by chhoflac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,10 +28,10 @@ class ClapTrap{
 		ClapTrap &operator = (const ClapTrap &otherOne);
 		~ClapTrap();
 		
-		std::string getName();
-		int			getHitPoints();
-		int			getEnergyPoints();
-		int			getAttackDammage();
+		std::string getName() const;
+		int			getHitPoints() const;
+		int			getEnergyPoints() const;
+		int			getAttackDamage() const;
 		
 		void	set_attack_damage(unsigned int value);
 		

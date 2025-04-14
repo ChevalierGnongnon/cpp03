@@ -1,29 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: chhoflac <chhoflac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/13 15:27:13 by chhoflac          #+#    #+#             */
-/*   Updated: 2025/04/14 21:03:46 by chhoflac         ###   ########.fr       */
+/*   Created: 2025/04/14 20:13:14 by chhoflac          #+#    #+#             */
+/*   Updated: 2025/04/14 20:34:38 by chhoflac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ClapTrap.hpp"
-#ifndef SCAVTRAP_HPP
-# define SCAVTRAP_HPP
+#include "FragTrap.hpp"
 
-class ScavTrap : public ClapTrap {
-	public :
-		ScavTrap();
-		~ScavTrap();
-		ScavTrap(std::string name);
-		ScavTrap(const ScavTrap &src);
-		ScavTrap &operator = (const ScavTrap &otherOne);
-		
-		void	guardGate();
-		void	attack(const std::string &target);
-};
-
-#endif
+int main(void){
+	
+}

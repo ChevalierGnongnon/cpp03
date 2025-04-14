@@ -6,7 +6,7 @@
 /*   By: chhoflac <chhoflac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/10 11:19:05 by chhoflac          #+#    #+#             */
-/*   Updated: 2025/04/14 20:09:09 by chhoflac         ###   ########.fr       */
+/*   Updated: 2025/04/14 20:39:53 by chhoflac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ int main(void){
 	
 
 	std::cout << "<-------------members function called------------->" << std::endl;
-	std::cout << "name: " << trappix.getName() << ", HP : " << trappix.getHitPoints() << " damage: " << trappix.getAttackDamage() << " EP: " << trappix.getEnergyPoints() << std::endl;
-	std::cout << "name: " << trappax.getName() << ", HP : " << trappax.getHitPoints() << " damage: " << trappax.getAttackDamage() << " EP: " << trappax.getEnergyPoints() << std::endl;
+	std::cout << "Name: " << trappix.getName() << ", HP : " << trappix.getHitPoints() << " damage: " << trappix.getAttackDamage() << ", EP: " << trappix.getEnergyPoints() << std::endl;
+	std::cout << "Name: " << trappax.getName() << ", HP : " << trappax.getHitPoints() << " damage: " << trappax.getAttackDamage() << ", EP: " << trappax.getEnergyPoints() << std::endl;
 	trappix.attack("trappax");
 	trappax.attack("other one");
 	trappax.takeDamage(10);

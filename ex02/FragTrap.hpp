@@ -6,7 +6,7 @@
 /*   By: chhoflac <chhoflac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/14 12:34:07 by chhoflac          #+#    #+#             */
-/*   Updated: 2025/04/14 12:41:08 by chhoflac         ###   ########.fr       */
+/*   Updated: 2025/04/14 21:00:30 by chhoflac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ class FragTrap : public ClapTrap  {
 		FragTrap(const FragTrap &src);
 		FragTrap &operator = (const FragTrap &otherOne);
 
-		void	attack(const std::string &target);
-		void	highFiveGuys(void);
+		virtual void	attack(const std::string &target);
+		void			highFiveGuys(void);
 };
 
 #endif

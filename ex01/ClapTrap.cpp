@@ -6,7 +6,7 @@
 /*   By: chhoflac <chhoflac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/10 11:18:32 by chhoflac          #+#    #+#             */
-/*   Updated: 2025/04/13 16:44:10 by chhoflac         ###   ########.fr       */
+/*   Updated: 2025/04/14 19:03:57 by chhoflac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,6 +93,21 @@ void	ClapTrap::beRepaired(unsigned int amount){
 		std::cout << "ClapTrap " << this->name << " is dead. He can't heal!" << std::endl;
 	}
 }
+
+std::string ClapTrap::getName() const{
+	return (this->name);
+}
+
+int			ClapTrap::getHitPoints() const{
+	return (this->hit_points);
+}
+int			ClapTrap::getEnergyPoints() const{
+	return (this->energy_points);
+}
+int			ClapTrap::getAttackDamage() const{
+	return (this->attack_damage);
+}
+
 
 void	ClapTrap::set_attack_damage(unsigned int value){
 	this->attack_damage = value;

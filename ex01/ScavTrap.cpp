@@ -6,7 +6,7 @@
 /*   By: chhoflac <chhoflac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 15:26:19 by chhoflac          #+#    #+#             */
-/*   Updated: 2025/04/13 16:52:42 by chhoflac         ###   ########.fr       */
+/*   Updated: 2025/04/14 19:13:14 by chhoflac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,22 @@ void	ScavTrap::attack(const std::string &target){
 	}
 	else
 		std::cout << "Error ! ScavTrap " << this->name << " doesn't have anymore energy points and is laying on the ground !" << std::endl;
+}
+
+std::string ScavTrap::getName() const{
+	return (this->name);
+}
+
+int			ScavTrap::getHitPoints() const{
+	return (this->hit_points);
+}
+
+int			ScavTrap::getEnergyPoints() const{
+	return (this->energy_points);
+}
+
+int			ScavTrap::getAttackDamage() const{
+	return (this->attack_damage);
 }
 
 void	ScavTrap::guardGate(){
